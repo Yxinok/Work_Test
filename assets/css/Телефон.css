@@ -1,0 +1,244 @@
+@media screen and (max-width: 1440px ){
+    
+.container {
+  width: 1160px;
+}   
+
+.link {
+    padding-left: 120px;
+}
+
+.cabel_info {
+    width: 565px;
+    height: 220px;
+}
+
+.text_cabel p {
+    width: 285px;
+    height: 66px;
+}
+
+.img_up {
+    width: 565px;
+    height: 161px;
+}
+
+.img_down {
+    width: 270px;
+    height: 129px;
+}
+
+.about_text {
+    width: 565px;
+}
+
+.menu_active {
+    display: none;
+    opacity: 0;
+    pointer-events: none;
+}
+
+}
+
+@media screen and (max-width: 1160px ){
+
+header {
+    justify-content: space-between;
+}
+
+.burger {
+    display: flex;
+}
+
+.container {
+    width: 768px;
+}   
+
+.recomend {
+    margin-top: 50px;
+}
+
+.link {
+    display: none;
+}
+
+ .cabel {
+    display: block;
+}
+
+.cabel_info {
+    width: auto;
+}
+
+.cabel_info:nth-child(odd) {
+    margin-right: 0px;
+}
+
+.btn2 {
+    margin: 0px 0px 50px 0px;
+}
+
+.img_up {
+    width: 768px;
+    height: 220px;
+}
+
+.img_down {
+    width: 367px;
+    height: 176px;
+}
+
+.about_izobraz {
+    margin-bottom: 30px;
+}
+
+.about_text {
+    width: auto;
+}
+
+.about_text_p {
+    height: auto;
+}
+
+.menu_active {
+    display: flex;
+    opacity: 1;
+    pointer-events: all;
+}
+
+}
+
+@media screen and (max-width: 768px ){
+
+.container {
+  width: 576px;
+}   
+
+.recomend h2 {
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.text_cabel p {
+    width: 312px;
+    height: 66px;
+}
+
+.about h2 {
+    font-size: 20px;
+}
+
+.img_up {
+    width: 576px;
+    height: 165px;
+}
+
+.img_down {
+    width: 275px;
+    height: 132px;
+}
+
+.about_izobraz_down {
+    margin-top: 25px;
+    margin-right: 0px;
+}
+
+.about h2 {
+    height: auto;
+}
+
+.menu {
+    width: 576px;
+    height: 370px;
+}
+
+}
+
+@media screen and (max-width: 576px ){
+
+.container {
+  width: 360px;
+}  
+
+.cabel_info {
+    display: block;
+    height: auto;
+}
+
+.img_up {
+    width: 360px;
+    height: 103px;
+}
+
+.img_down {
+    width: 172px;
+    height: 82px;
+}
+
+.about_izobraz_down {
+    margin-top: 15px;
+}
+
+.about h2 {
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.cabel {
+    display: flex;
+    margin-top: 20px;
+}
+
+.text_cabel p {
+    width: 150px;
+    height: 100px;
+    font-size: 16px;
+}
+
+.img_cabel {
+    width: 170px;
+    height: 170px;
+}
+
+.img_cabel img{
+    width: 170px;
+    height: 170px;
+}
+
+.text_cabel {
+    margin: 0px;
+    padding: 10px 0px 10px 10px;
+}
+
+.cabel_info:nth-child(odd) {
+    margin-right: 15px;
+}
+
+.btn {
+    width: 150px;
+}
+
+.cabel_info:nth-child(n+5) {
+    display: none;
+}
+
+.menu {
+    width: 360px;
+    height: 320px;
+}
+
+}
+
+@media screen and (min-width: 3000px ){
+.cabel_info {
+    width: 700px;
+}
+}
+
+@media screen and (min-width: 1440px){
+.menu_active {
+    display: none;
+    opacity: 0;
+    pointer-events: none;
+}
+}

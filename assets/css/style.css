@@ -1,0 +1,316 @@
+/* Настройки страницы */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+  background-color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: #272A33;
+}
+
+.container {
+  width: 1440px;
+  margin: 0 auto;
+  background: white;
+}
+
+/* Шапка */
+
+.head_line {
+    border-bottom: 1px solid #EAEFF4;
+    width: 100%;
+}
+
+header {
+    display: flex;
+    align-items: center;
+}
+
+.link {
+    width: 1210px;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 380px;
+}
+
+.link a{
+    font-family: "Open Sans", sans-serif;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    color: #272A33;
+}
+
+.link a:hover {
+    color: #EE753E;
+}
+
+/* кнопка меня */
+.burger {
+    width: 50px;
+    height: 50px;
+    border-radius: 8px;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    cursor: pointer;
+    border: 1px solid black;
+}
+
+.burger span {
+    width: 23px;
+    height: 2px;
+    background: #333;
+    margin: 6px auto 0px;
+    transition: 0.3s;
+    transform-origin: center;
+}
+
+.burger span:nth-child(1) {
+    margin: 0px auto;
+}
+
+.burger.burger_active span:nth-child(2) {
+  opacity: 0;
+}
+
+.burger.burger_active span:nth-child(1) {
+  transform: rotate(45deg) translateY(7px) translateX(5px);
+  width: 30px;
+}
+
+.burger.burger_active span:nth-child(3) {
+  transform: rotate(-45deg) translateY(-7px) translateX(4px);
+  width: 30px;
+}
+
+
+/* само меню */
+
+.menu {
+    width: 768px;
+    height: 370px;
+    background-color: white;
+    position: absolute;
+    z-index: 2;
+    display: none;
+    flex-direction: column;
+    pointer-events: none; 
+    opacity: 0;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #272A33;
+    padding: 20px 0px;
+    border-bottom: 1px solid #D5DFE9;
+    font-size: 16px;
+    font-family: "Open Sans", sans-serif;
+    transition: color 0.1s ease;
+}
+
+.menu a:active {
+    color: #EE753E;
+}
+
+.menu a:hover {
+    color: #EE753E;
+}
+
+.menu_active {
+    display: flex;
+    opacity: 1;
+    pointer-events: all;
+}
+
+/* Блок с рекомендацией */
+
+/* общий блок */
+.recomend {
+    margin-top: 80px;
+}
+
+/* заголовок */
+.recomend h2 { 
+    font-weight: 700;
+    font-size: 36px;
+}
+
+/* контейнер со всеми блоками инфы */
+.cabel {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+/* блок инфы */
+.cabel_info {
+    display: flex;
+    border: 1px solid #E0E6ED;
+    width: 705px;
+    height: 220px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+.cabel_info:nth-child(odd) {
+    margin-right: 24px;
+}
+
+.img_cabel {
+    background-color: #EEF3F8;
+    width: 220px;
+    height: 220px;
+    border-radius: 8px;
+}
+
+
+/* текст инфы */
+.text_cabel {
+    margin: 31px 30px;
+}
+
+.text_cabel p{
+    width: 425px;
+    height: 66px;
+}
+
+.text_cabel_nalichie {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.text_cabel_nalichie span {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+.btn {
+    color: white;
+    background-color: #272A33;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    width: 159px;
+    height: 46px;
+    margin-top: 10px;
+    border-radius: 8px;
+    border: 0px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #EE753E;
+}
+
+/* Кнопка перехода в каталог */
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+.btn2 {
+    color: white;
+    background-color: #272A33;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    width: 223px;
+    height: 46px;
+    border-radius: 8px;
+    border: 0px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn2:hover {
+    background-color: #EE753E;
+}
+
+/* информация о компании */
+
+.about {
+    margin-top: 5px;
+    
+}
+
+.about_cont {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Заголовок */
+.about h2 { 
+    font-weight: 700;
+    font-size: 36px;
+    height: 49px;
+    margin-bottom: 30px;
+}
+
+/* Изображения */
+.about_izobraz {
+    margin-right: 30px;
+}
+
+.about_izobraz_down {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+/* текст */
+
+.about_text {
+    width: 705px;
+    margin-bottom: 50px;
+}
+
+.about_text h3 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.about_text_img {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.about_text_img p{
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    margin-left: 15px;
+}
+
+.img_up {
+    width: 705px;
+    height: 202px;
+}
+
+.img_down {
+    width: 337px;
+    height: 162px;
+}
+
+
+
+/* Текст который в конце */
+.about_text_p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    margin-bottom: 30px;
+    height: 48px;
+}
