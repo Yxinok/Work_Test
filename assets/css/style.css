@@ -171,6 +171,12 @@ header {
     border-radius: 8px;
 }
 
+.img_cabel img {
+    object-fit:contain;
+    width: 220px;
+    height: 220px;
+}
+
 
 /* текст инфы */
 .text_cabel {
